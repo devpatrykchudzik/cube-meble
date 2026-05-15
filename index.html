@@ -55,9 +55,9 @@ img{display:block;max-width:100%}
 .header-logo{display:flex;align-items:center;gap:12px;padding-right:18px;position:relative}
 .header-logo::after{content:'';position:absolute;right:0;top:8px;bottom:8px;width:1px;background:rgba(245,241,234,0.20);transition:background .36s var(--ease-out)}
 .header.scrolled .header-logo::after{background:rgba(14,14,14,0.10)}
-.logo-mark{width:44px;height:44px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px rgba(245,241,234,0.20),0 4px 12px rgba(0,0,0,0.20);transition:transform .6s var(--ease-out),box-shadow .36s var(--ease-out);overflow:hidden}
+.logo-mark{width:44px;height:44px;min-width:44px;aspect-ratio:1;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px rgba(245,241,234,0.20),0 4px 12px rgba(0,0,0,0.20);transition:transform .6s var(--ease-out),box-shadow .36s var(--ease-out);overflow:hidden;flex-shrink:0}
 .header.scrolled .logo-mark{box-shadow:inset 0 0 0 1px rgba(14,14,14,0.10),0 4px 12px rgba(14,14,14,0.08)}
-.logo-mark img{width:40px;height:40px}
+.logo-mark img{width:40px;height:40px;object-fit:contain}
 .header-logo:hover .logo-mark{transform:rotate(-8deg) scale(1.04)}
 .logo-words{display:flex;flex-direction:column}
 .logo-words .word{font:900 18px/1 'Inter';letter-spacing:-0.03em;color:var(--bone);transition:color .36s var(--ease-out)}
